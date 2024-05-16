@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Lamasset(1).svg">
+    <title>Lamessat</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="img/Lamasset (1).svg" alt="logo" width="70px">Lamessat</a>
+        <nav class="navbar">
+
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Munu">Munu</a>
+            <a href="#Reservation">Reservation</a>
+            <a href="#Join">Join as</a>
+            <a href="#Contact">Contact</a>
+
+
+        </nav>
+    </header>
+
+
+    <section class="Home" id="Home">
+        <div>
+            <h2>We Have Been Serving<br><span>COFFEE SHOP </span></h2>
+            <h3>* SINCE 2000 *</h3>
+        </div>
+    </section>
+
+    <section class="About" id="About">
+        <h1 class="title">About Us</h1>
+        <div class="content-About">
+
+            <h3 class="title">The Perfect Place to Be</h3>
+            <p> In a quaint town, beneath the dawn of the new millennium, "Lamessat" unveiled its charm to the
+                world. The concept behind its name was simple yet profound; its founder envisioned not merely a café
+                but a sanctuary where patrons could savor more than just coffee and pastries. Here, they would bask
+                in a unique ambiance of comfort, warmth, and hospitality.
+                <br><br>
+                As the years unfolded, "Lamessat Café" evolved beyond its humble beginnings. It emerged as a haven
+                for artists, writers, and thinkers, drawn to its serene nook for inspiration and discourse. Across
+                generations, tales and dialogues echoed under its roof. Amidst the shifting tides of the world
+                beyond its threshold, Lamessat remained steadfast in its essence, offering each visitor a blend of
+                nostalgia for bygone days and optimism for the future.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="Reservation " id="Reservation">
+
+        <h1 class="title">Reservation</h1>
+        <!--autoplay: التشغيل التلقائي للفيديو
+Muted:ليبقى الصوت مكتوما 
+Loop: لتكرار تشغيل الفيديو بلا توقف 
+Poster: صورة تعرض قبل تشغيل الفيديو  و في حال كان المتصفح لايدعم عرض الفيديو يظهر النص 
+ your browser-->
+        <video class="" autoplay muted loop poster= "img/bgAbout(1).svg">
+            <source src="img/bgreservation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <form  action="resrv.php" method="post">
+            <!--action="nor.alkeran@gmail.com" -->
+            <div>
+                <input type="text" class="input-book name"  id="name" placeholder="  Name" name="name">
+            </div>
+
+            <div>
+                <input type="email" class="input-book email"   id="email"  placeholder="  Email" name="email">
+            </div>
+            <div>
+                <input type="number" class="input-book number"   id="Phone"  placeholder="  Phone " name="Phone">
+            </div>
+            <div>
+                <input type="date" class="input-book"   id="date"  placeholder=" Date" name="date">
+            </div>
+
+            <div>
+                <input type="password"  class="input-book"   id="password" placeholder=" *******" name="password" required>
+             
+            </div>
+            <div>
+            
+                <input type="password"  class="input-book"  id="confirmPassword" name="confirmPassword"  placeholder="Confirmer le mot de passe"  required   >
+              </div>
+            <div>
+                <input type="time" class="input-book"   id="Time" name="Time">
+            </div>
+            <div>
+                <input type="number" class="input-book"   id="Person"   name="Person" placeholder ="nombre de personne " >
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">submit</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <section class="Contact" id="Contact">
+            <h2 class="title">Contact</h2>
+            <div class="content-Contact">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102492.70476827947!2d3.088993340052718!3d36.60478908688743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa9966039668f%3A0x493d3353d99d3276!2z2KPZiNmE2KfYryDYp9mE2LTYqNmE!5e0!3m2!1sar!2sdz!4v1714483452146!5m2!1sar!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i> +213 540 80 104</a>
+                    <a href="#"><i class="fas fa-envelope"></i> LAMESSAT@gmail.com</a>
+                    <a href="#"><i class="fab fa-twitter"></i> LAMESSAT@gmail.com</a>
+                    <a href="#"><i class="fab fa-instagram"></i> LAMESSAT.instagram.com</a>
+                    <a href="#"><i class="fab fa-youtube"></i >LAMESSAT.youtube.com</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                Copyright © 2014 - 2023 LAMESSAT. All Rights Reserved.
+            </div>
+        </footer>
+   
+    
+   
+
+
+</body>
+
+
+
+
+<script src="resrv.js"  type=" module"></script>
+
+</html>

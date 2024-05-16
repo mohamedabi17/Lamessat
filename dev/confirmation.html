@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Lamasset(1).svg">
+    <title>Lamessat</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="img/Lamasset (1).svg" alt="logo" width="70px">Lamessat</a>
+        <nav class="navbar">
+
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Munu">Munu</a>
+            <a href="#Reservation">Reservation</a>
+            <a href="#Join">Join as</a>
+            <a href="#Contact">Contact</a>
+
+
+        </nav>
+    </header>
+
+
+    <section class="Home" id="Home">
+        <div>
+            <h2>We Have Been Serving<br><span>COFFEE SHOP </span></h2>
+            <h3>* SINCE 2000 *</h3>
+        </div>
+    </section>
+
+    <section class="About" id="About">
+        <h1 class="title">About Us</h1>
+        <div class="content-About">
+
+            <h3 class="title">User Confirmed</h3>
+            <p> In a quaint town, beneath the dawn of the new millennium, "Lamessat" unveiled its charm to the
+                world. The concept behind its name was simple yet profound; its founder envisioned not merely a café
+                but a sanctuary where patrons could savor more than just coffee and pastries. Here, they would bask
+                in a unique ambiance of comfort, warmth, and hospitality.
+                <br><br>
+                As the years unfolded, "Lamessat Café" evolved beyond its humble beginnings. It emerged as a haven
+                for artists, writers, and thinkers, drawn to its serene nook for inspiration and discourse. Across
+                generations, tales and dialogues echoed under its roof. Amidst the shifting tides of the world
+                beyond its threshold, Lamessat remained steadfast in its essence, offering each visitor a blend of
+                nostalgia for bygone days and optimism for the future.
+            </p>
+
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="copyright">
+            Copyright © 2014 - 2023 LAMESSAT. All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('form');
+
+        form.addEventListener('submit', function (event) {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            // The 'phone' field should have an id of 'Phone' to match the HTML form
+            var phone = document.getElementById('Phone').value; // Changed from 'phone' to 'Phone'
+            var date = document.getElementById('date').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            // The 'time' field should have an id of 'Time' to match the HTML form
+            var time = document.getElementById('Time').value; // Changed from 'time' to 'Time'
+            var Person = document.getElementById('Person').value;
+
+            // Client-side validation
+            if (name === '' || email === '' || phone === '' || date === '' || password === '' || confirmPassword === '' || time === '' || Person === '') {
+                alert('Please fill in all fields.');
+                event.preventDefault();
+            } else if (password !== confirmPassword) {
+                alert('Password Confirmation is Wrong');
+                event.preventDefault();
+            }
+        });
+    });
+
+    <script />

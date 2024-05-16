@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Lamasset (1).svg">
+    <title>Lamessat</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/Lamasset (1).svg" alt="logo" width="70px">Lamessat</a>
+        <nav class="navbar">
+
+            <a href="index.html" target="_blank">Home</a>
+            <a href="index.html#About" target="_self">About</a>
+            <a href="#">Munu</a>
+            <a href="index.html#Reservation"target="_self">Reservation</a>
+            <a href="index.html#Join"target="_self">Join as</a>
+            <a href="index.html#Contact"target="_self">Contact</a>
+
+
+        </nav>
+    </header>
+
+
+    <section class="Home" id="Home">
+        <div>
+            <h2><span>MENU </span></h2>
+
+        </div>
+    </section>
+    <section class="Basic">
+        <div class="Basic-Menu ">
+            <button id="showMenu">Menu</button>
+            <button id="showDrink">Drink </button>
+            <button id="showSweet">Sweet</button>
+            <button id="showFood">Food</button>
+        </div>
+        <ul id="Menu" style="display: none;">
+            <li>Drinks</li>
+            <li>Sweet</li>
+            <li>Food</li>
+        </ul>
+        <ul id="Drink" style="display: none;">
+            <li>Hot Coffees</li>
+            <li>Cold Coffees</li>
+            <li>Iced Teas</li>
+            <li>Hot Teas</li>
+            <li>Hot Beverages</li>
+            <li>Bottled Beverages</li>
+        </ul>
+        <ul id="Sweet" style="display: none;">
+            <li>Hot Coffees</li>
+            <li>Cold Coffees</li>
+            <li>سلطة</li>
+            <li>سلطة</li>
+            <li>سلطة</li>
+            <li>سلطة</li>
+        </ul>
+        <ul id="Food" style="display: none;">
+            <li>Bakery</li>
+            <li>Lunch</li>
+        </ul>
+    </section>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const MenuList = document.getElementById('Menu');
+            MenuList.style.display = 'block'; // تظهر القائمة عند تحميل الصفحة
+        });
+        const showMenuButton = document.getElementById('showMenu');
+        const showDrinkButton = document.getElementById('showDrink');
+        const showSweetButton = document.getElementById('showSweet');
+        const showFoodButton = document.getElementById('showFood');
+
+        const MenuList = document.getElementById('Menu');
+        const DrinkList = document.getElementById('Drink');
+        const SweetList = document.getElementById('Sweet');
+        const FoodList = document.getElementById('Food');
+
+        showMenuButton.addEventListener('click', function () {
+            MenuList.style.display = 'block';
+            DrinkList.style.display = 'none';
+            SweetList.style.display = 'none';
+            FoodList.style.display = 'none';
+
+        });
+
+        showDrinkButton.addEventListener('click', function () {
+            DrinkList.style.display = 'block';
+            MenuList.style.display = 'none';
+            SweetList.style.display = 'none';
+            FoodList.style.display = 'none';
+
+        });
+        showSweetButton.addEventListener('click', function () {
+            SweetList.style.display = 'block';
+            MenuList.style.display = 'none';
+            DrinkList.style.display = 'none';
+            FoodList.style.display = 'none';
+
+        });
+        showFoodButton.addEventListener('click', function () {
+            FoodList.style.display = 'block';
+            MenuList.style.display = 'none';
+            DrinkList.style.display = 'none';
+            SweetList.style.display = 'none';
+
+        });
+
+    </script>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2014 - 2023 LAMESSAT. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Brown: #49341e;
+    --Beige: #FFE4C8;
+    --hoverr: #c4a88b;
+    --White: #fff;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* حساب الحجم الكلي للعنصر مع الهامش و الحدود */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* غير واضح */
+}
+
+/* header */
+header {
+    background: url(img/bgAbout.svg) no-repeat;
+    /* تغيير حجم صورة الخلفية بشكل متناسب لتغطية العنصر بأكمله ، مع اقتصاص أي أجزاء زائدة إذا لزم الأمر*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 2px inset #49341e;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    /*غير واضح*/
+    justify-content: space-between;
+    /* remplase margin dans flex */
+    align-items: center;
+    /*تستخدم هذه القيمة لجعل العناصر تبدأ بالظهور من آخر container و تتمدد عند الحاجة*/
+    padding: 10px 200px;
+
+}
+
+/*logo dans header*/
+.logo {
+
+    text-decoration: none;
+    color: var(--Brown);
+    text-transform: uppercase;
+    /*toute char est MAJUS*/
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+/*nav bar  dans header*/
+.navbar a {
+    color: var(--Brown);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navbar a:hover {
+    color: var(--hoverr);
+}
+
+/*pour tous les section souf header  */
+section {
+    padding: 100px 200px;
+}
+
+/*pour tous les title de  section souf header  */
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--Brown);
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+/* section Home*/
+.Home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* center sur height*/
+    background: url(img/carousel-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Home h2 {
+    color: var(--White);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.Home h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--Beige);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.Home h3 {
+    color: var(--White);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* section About us*/
+.About {
+    background: url(img/bgAbout.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: static;
+    padding-top: 10em;
+}
+
+.content-About {
+    justify-content: center;
+    color: var(--Brown);
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style: italic;
+    padding-bottom: 10em;
+    margin: 10px;
+
+}
+
+.content-About h3 {
+
+    color: var(--Beige);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: left;
+    font-style: italic;
+    margin: 10px ;
+    margin-top: 50px;
+
+    text-shadow: 0 0 5px var(--Brown);
+   
+}
+
+/* section Reservation */
+.Reservation {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+}
+.Reservation video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-book {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    margin: 20px ;
+    padding: 10px 15px; /* تقليل حجم الحواف لتناسب عناصر الإدخال */
+    display: block;
+    background-color: rgba(255, 228, 200, 0.8);
+    border: 2px inset transparent; /* جعل الحافة شفافة */
+    border-radius: 5px;
+
+
+}
+
+.submit-btn {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    margin: 20px auto;
+    padding: 20px;
+    color: var(--Brown);
+    background-color: var(--Beige);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--hoverr);
+    transform: scale(1.1);/* لفهم الخاصية استبدلها ب transform: skewY(20deg); لفهمها اكثر حيث هي حركة الزر عند التمريرّ*/
+    
+
+}
+.Contact{
+    background: url(img/bgAbout.svg) no-repeat;
+    
+}
+.content-Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6em;
+}
+.social-icons{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 10px; /* تحديد تباعد بين البطاقات */
+    
+}
+.social-icons a{
+   
+        color:var(--Brown);
+        text-decoration: none;
+        font-size: 1.4em;
+        font-weight: 500;
+        padding-left: 30px;    
+    
+}
+.social-icons a:hover{
+    color: var(--hoverr);
+}
+footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 300;
+    font-size: 1.4em;
+    background-color: var(--Beige);
+    color: var(--Brown);
+    margin: 0;
+    padding: 20px;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navbar a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .Home-content h2 {
+        font-size: 1em;
+    }
+
+    .Home-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .Home-content h2 {
+        font-size: 0.8em;
+    }
+
+    .Home-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+}
+

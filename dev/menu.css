@@ -1,0 +1,19 @@
+.Basic{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* center sur height*/
+    background: url(img/bgAbout.svg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+button{
+    display: block;
+}
+.Basic-Menu{
+
+margin-right: 300px;
+
+}
